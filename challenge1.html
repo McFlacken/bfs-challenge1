@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/5a7b06498c.js" crossorigin="anonymous"></script>
+
+	<title>Challenge 1</title>
+
+	<style type="text/css">
+	.navbar-nav li{
+		margin-right: 20px;
+	}
+
+
+	.media-pics{
+		display: flex;
+		margin-bottom: 25px;
+	}
+
+	.media-pics img{
+		width: 100%;
+	}
+	
+	.column{
+		flex: 27%;
+		padding: 5px;
+	}
+
+	.column-ab{
+		flex:14%;
+		padding: 5px;
+	}
+
+	.desc-area{
+		margin-bottom: 25px;
+	}
+
+	.invite{
+		padding: 10px;
+	}
+
+	.experience-data{
+		margin-left: 0;
+	}
+
+	.invite-to-book{
+		margin-bottom: 20px;
+	}
+
+	.what-you-will-do{
+		margin-bottom: 25px;
+	}
+
+	.what-you-desc{
+		white-space: pre-wrap;
+	}
+	
+	.try-something{
+		margin-bottom: 25px;
+	}
+
+	.your-host{
+		margin-bottom: 25px;
+	}
+
+	.what-to-bring{
+		margin-bottom: 25px;
+	}
+
+	.what-to-bring-list ul{
+		padding-left: 0;
+	}
+
+	.what-to-bring-list ul li{
+		list-style-type: none;
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+
+	.how-to-participate{
+		margin-bottom: 25px;
+	}
+
+	.guest-reviews{
+		margin-bottom: 25px;
+	}
+
+	.guest-review{
+		margin-bottom: 20px;
+	}
+
+	.guest-review-pic img{
+		border-radius: 50%;
+		float: left;
+		margin-right: 10px;
+	}
+
+	.guest-review-name{
+		float: left;
+		margin-right: 10px;
+	}
+
+	.guest-review-comment{
+		margin-top: 15px;
+		margin-right: 10%;
+		margin-bottom: 10px;
+	}
+
+	.martin-response-pic img{
+		border-radius:50%;
+		float: left;
+		margin-right: 10px;
+	}
+
+	.martin-response-title{
+		float: left;
+		margin-right: 10px;
+	}
+
+	.martin-response{
+		margin-top: 15px;
+		margin-left: 10%;
+		margin-bottom: 10px;
+	}
+
+
+	.availability{
+		margin-bottom: 25px;
+	}
+
+	.things-to-keep-in-mind{
+		margin-bottom: 25px;
+	}
+
+	.more-online-experiences{
+		margin-bottom: 25px;
+	}
+
+	.bottom-area{
+		margin-bottom: 50px;
+	}
+
+	.bottom-area-cards .card{
+		border: none;
+	}
+
+
+	.list-group-item{
+		border: none;
+		padding-left: 0;
+	}
+
+	.final-section{
+		margin-bottom: 100px;
+	}
+
+	</style>
+
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-dark bg-dark">
+	<a class="navbar-brand" href="#">
+    	<i class="fab fa-airbnb"></i>
+    	airbnb
+    </a>
+    <form class="form-inline nav-item">
+    	<input class="form-control mr-sm-2" type="search" placeholder="&#x1F50D Add a location">
+  	</form>
+
+  	<ul class="navbar-nav nav-item flex-row">
+  		<li class="nav-item dropdown">
+  			<a class="nav-item nav-link dropdown-toggle" href="#"><i class="fas fa-globe"></i></a>
+  		</li>
+  		<li class="nav-item">
+  			<a class="nav-link">Help</a>
+  		</li>
+  		<li class="nav-item">
+  			<a class="nav-link">Sign in</a>
+  		</li>
+  	</ul>
+
+</nav>
+
+<!-- /////////////// -->
+
+<div class="container">
+	<div class="media-pics row">
+		<div class="share-save-buttons" style="z-index: 2; position: absolute; right: 8%; background: #e8e7e6; padding: 5px; text-align: right;">
+			<div class="share-button" style="display: inline; margin: 0 2px";>
+				<i class="far fa-share-square"></i>
+				<button>Share</button>
+			</div>
+			<div class="save-button" style="display: inline; margin: 0 2px";>
+				<i class="far fa-heart"></i>
+				<button>Save</button>
+			</div>
+		</div>
+		<div class="video-area column" style="z-index: 1">
+			<img src="https://a0.muscache.com/im/pictures/93813fcc-8a9e-46ef-a080-01654d2579f3.jpg?aki_policy=exp_md">
+		</div>
+		<div class="image1 column" style="z-index: 1">
+			<img src="https://a0.muscache.com/im/pictures/14083e59-6113-4700-a9d5-dd4e50a43255.jpg?aki_policy=exp_md">
+		</div>
+		<div class="images2-3 column-ab" style="z-index: 1">
+			<div class="image2">
+				<img src="https://a0.muscache.com/im/pictures/9aad7c99-78bd-43a8-aaee-c48dbd813e0b.jpg?aki_policy=exp_md">
+			</div>
+			<div class="image3">
+				<img src="https://a0.muscache.com/im/pictures/40e32e16-4a9b-4346-ab7c-7f496ea0c585.jpg?aki_policy=exp_md">
+			</div>
+		</div>
+		<div class="image4 column" style="z-index: 1">
+			<img src="https://a0.muscache.com/im/pictures/93813fcc-8a9e-46ef-a080-01654d2579f3.jpg?aki_policy=exp_md">
+		</div>
+		
+	</div>
+
+<!-- ////////////////////////////////// -->
+
+	<div class="description-area container-fluid">
+		<div class="desc-area row">	
+				<div class="summary col-4">
+						<div class="top-level-tags">
+							<span class="online-experience"><i class="fas fa-caret-right"></i>ONLINE EXPERIENCE</span>
+						</div>
+						<div class="experience-title">
+							<h2>Secrets of Magic</h2>
+						</div>
+						<div class="location">
+							Berkhamsted, United Kingdom
+						</div>
+						<div class="rating">
+							4.97 <span class="star"><i class="fas fa-star"></i></span> (440)
+						</div>
+						<div class="tags">
+							<span class="tag">MAGIC SHOW</span>
+							<span class="tag">PERFORMANCE</span>
+							<span class="tag">CLASS</span>
+						</div>
+				</div>
+			
+				<div class="experience-data container col-6">
+					<div class="invite-to-book">
+							<span class="tablet-icon"><i class="fas fa-tablet-alt"></i></span>
+							<span class="invite border-top border-bottom">Book and join this experience from your computer, phone, or tablet.</span>
+					</div>
+					<div class="experience-info row">
+							<div class="duration-info col-3">
+								<div class="clock-icon"><i class="far fa-clock"></i></div>
+								<div class="duration-hours">Duration</div>
+								<div class="duration-hours">1.5 hours</div>
+							</div>
+							<div class="group-size-info col-3">
+								<div class="group-icon"><i class="fas fa-user-friends"></i></div>
+								<div class="group-size">Group size</div>
+								<div class="group-size">Up to 10 people</div>
+							</div>
+							<div class="language-info col-3">
+								<div class="language-icon"><i class="far fa-comments"></i></div>
+								<div class="language-info">Hosted in</div>
+								<div class="Language-info">English</div>
+							</div>
+					</div>
+				</div>
+				
+		</div>
+	</div>
+
+<!-- /////////////////////////////// -->
+
+	<div class="what-you-will-do container-fluid">
+		<div class="what-you-row row">
+			<div class="what-you-title col-4 h4">What you'll do</div>
+		
+			<div class="what-you-desc col-8">
+Prepare to be inspired and spellbound as we go on an epic 90 minute journey through my magical world.
+
+Join me in the Secrets of Magic Zoom Classroom where you will take part in a mind-blowing magic show with everyday objects such as cards, coins & the gold-dust of our times - a roll of toilet paper!
+
+I'll share with you heartfelt & inspiring stories of truly magical moments that have happened while entertaining children in hospital, which helped me discover what the true secret of magic really is.
+
+The show section dramatically ends with an attempt to break one of my Guinness World Records live for you on camera! (Goes without saying it won't be the skydive record I'm afraid)
+
+Then it's your turn to give it a go!
+
+I'll share with you some of the tricks you've just witnessed me perform. But this experience won't just be about learning tricks, we'll also explore the psychology that turns a trick into a piece of magic.
+
+For families, the recommended age of this experience is 7+ however private bookings get a bespoke service, allowing me to adapt to your child's age range/needs.
+
+This experience is great for team-building and if you book as a private group, I can provide a bespoke piece of magic. Is your group larger than my listed max group size for private groups? Send me a message!
+
+*Price is based on per person watching, regardless of location or if viewing on the same device*
+			</div>
+		</div>
+	</div>
+
+	<!-- //////////////////////////// -->
+
+	<div class="try-something container-fluid" style="background: #d9d3d2;">
+		<div class="try-something-row row">
+			<div class="try-something-title col-4 h4">Try something new together</div>
+			
+			<div class="try-something-suggestions col-8 row">
+				<div class="try-something-1 col-4">
+					<div class="try-hosts-icon"><i class="far fa-smile-beam"></i></div>
+					<div class="try-hosts-title">Thoughtful hosts</div>
+					<div class="try-hosts-desc">Get to know hosts who share their expertise and a window to their world.</div>
+				</div>
+				<div class="try-something-2 col-4">
+					<div class="try-small-group-icon"><i class="fas fa-user-friends"></i></div>
+					<div class="try-small-group-title">Small group activities</div>
+					<div class="try-small-group-desc">Meet people from all over the world while learning something new together.</div>
+				</div>
+				<div class="try-something-3 col-4">
+					<div class="try-simple-and-global-icon"><i class="fas fa-laptop"></i></div>
+					<div class="try-simple-and-global-title">Simple and global</div>
+					<div class="try-simple-and-global-desc">Join easily and participate from home without a lot of prep.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- //////////////////////////////////////////// -->
+
+	<div class="your-host container-fluid">
+		<div class="your-host-row row">
+			<div class="your-host-title col-4 h4">Your host</div>
+			<div class="your-host-details col-8">
+				<div class="host-details-pic"><img class="host-pic" style="border-radius: 50%" src="https://a0.muscache.com/im/pictures/user/fb15a727-24d6-4d43-a4a2-ef8ae71e0cee.jpg?aki_policy=profile_x_medium" height="120" width="120" alt="Learn more about Martin" title="Learn more about Martin"></div>
+				<div class="host-details-name">Martin</div>
+				<div class="host-details-description">
+					I've been performing magic since the age of 12. Over the past few years, I broke several Guinness World Records in magic to raise money/awareness for Spread a Smile who provide entertainment for children in hospital.
+
+					I hold the Guinness Book of World Record titles for:
+					Most Magic Tricks on a Skydive
+					Most Magic Tricks in a Wind Tunnel
+					Most Magic Tricks Blindfolded in 1 Minute
+					Most Playing Cards Identified in 1 Minute
+
+					Each record has been crazy ride, particularly the blindfold record, which was first achieved on Britain's Got Talent in 2018 and which I’ve since broken twice in 2019.
+
+					This online experience is an adaptation of my in-person experience “Secrets of Magic at Kings Cross Station” which has almost 40 5-star reviews!
+
+					My magic is family friendly and guaranteed to be an experience you'll remember forever!</div>
+				<div class="your-host-button">
+					<button class="contact-host btn btn-outline-primary">Contact host</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<!-- ///////////////////////////////// -->
+
+	<div class="what-to-bring container-fluid">
+		<div class="what-to-bring-row row">
+			<div class="what-to-bring-title col-4 h4">What to bring</div>
+			<div class="what-to-bring-list col-8">
+				<ul>
+					<li class="border-bottom"><i class="far fa-check-circle"></i> Deck of playing cards (alternatively game cards such as Uno or even Tarot cards can be used)</li>
+					<li class="border-bottom"><i class="far fa-check-circle"></i> Roll of toilet paper (or even A4 paper if your tissue supply is running low!)</li>
+					<li class="border-bottom"><i class="far fa-check-circle"></i> A coin (preferably a larger coin of your currency but any coin will do)</li>
+					<li class="border-bottom"><i class="far fa-check-circle"></i> A pen/pencil to use as a ‘magic wand’ (if you have a wand from a magic set or even a Harry Potter collectors wand, all the better)</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- /////////////////////////////// -->
+
+	<div class="how-to-participate container">
+		<div class="how-to-participate-row row">
+			<div class="how-to-participate-title col-4 h4">How to participate</div>
+			<div class="how-to-participate-details col-8">
+				<div class="join-video-call">
+					<div class="download-zoom">
+						<a href="https://zoom.us/download"><span class="download-zoom-link">Download Zoom</span></a> for free on a desktop or mobile device. After you book, you’ll receive an email with a link and details on how to join.
+						
+						<blockquote class="blockquote text-left" style="background:#d9d3d2; margin: 15px 5%">
+							<p class="mb-0 martin-quote">"I'll be coming to you, thanks to the magic of the internet, from my hometown of Berkhamsted in the United Kingdom."</p>
+							<footer class="blockquote-footer">Martin</footer>
+						</blockquote>
+
+					</div>
+				</div>
+				<div class="private-group">
+					<div class="private-group-title">Book a private group</div>
+					<div class="private-group-description">Want to join with just your family and friends? Martin will host a private group for up to 30 guests starting at $244.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- //////////////////////////////// -->
+
+	<div class="guest-reviews container-fluid">
+		<div class="guest-reviews-row row">
+			<div class="guest-reviews-overview col-4 h4">
+				<div class="guest-reviews-title">Guest reviews</div>
+				<div class="guest-ratings">4.97 <span class="guest-reviews-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></div>
+			</div>
+			<div class="guest-reviews-details col-8">
+				<div class="guest-review-1 guest-review border-bottom">
+					<div class="guest-review-pic">
+						<img src="https://a0.muscache.com/im/users/37248682/profile_pic/1435776079/original.jpg?aki_policy=profile_x_medium" height="48" width="48" alt="Sania" title="Sania">
+					</div>
+					<div class="guest-review-name">
+						Sania
+					</div>
+					<div class="guest-review-date">
+						July 2020
+					</div>
+					<div class="guest-review-rating">
+						<span>&#9733 &#9733 &#9733 &#9733 &#9733</span>
+					</div>
+					<div class="guest-review-comment">
+						Our team at work had a ball with Martin! There was a little listening and watching, interacting and hands-on experiments! The 90 mins flew by and everyone left with a smile.
+					</div>
+				</div>
+				<div class="guest-review-2 guest-review border-bottom">
+					<div class="guest-review-pic">
+						<img src="https://a0.muscache.com/im/pictures/user/622067c4-0ab2-4258-b147-52ebb90d0145.jpg?aki_policy=profile_x_medium" height="48" width="48" alt="Vienna" title="Vienna">
+					</div>
+					<div class="guest-review-name">
+						Vienna
+					</div>
+					<div class="guest-review-date">
+						June 2020
+					</div>
+					<div class="guest-review-rating">
+						<span>&#9733 &#9733 &#9733 &#9733 &#9733</span>
+					</div>
+					<div class="guest-review-comment">
+						This was an awesome experience for a work team event, when there are so few options given COVID 19 (oops, said the “C” world!). There were 22 of us + a few “ guests” (colleagues’ children)... looked like everyone had a great time, laughed a lot, learned some tricks! Nice to be transported to a magical place even only for 90min!
+					</div>
+				</div>
+				<div class="guest-review-3 guest-review border-bottom">
+					<div class="guest-review-pic">
+						<img src="https://a0.muscache.com/im/users/289613/profile_pic/1290075011/original.jpg?aki_policy=profile_x_medium" height="48" width="48" alt="Anita" title="Anita">
+					</div>
+					<div class="guest-review-name">
+						Anita
+					</div>
+					<div class="guest-review-date">
+						June 2020
+					</div>
+					<div class="guest-review-rating">
+						<span>&#9733 &#9733 &#9733 &#9733 &#9733</span>
+					</div>
+					<div class="guest-review-comment">
+						This was truly a fabulous experience. This was my first airbnb experience and definitely my first airbnb ZOOM/virtual experience and any future experiences will have to work hard to match the quality of this one! I had read the reviews - which were all quite positive - so expected the experience would be decent, yet it vastly exceeded my expectations. We arranged the experience as a "private" event - with 10 family members as a father's day celebration. Martin was extremely helpful in working with me as I navigated the logistics of gathering family from multiple time zones to a single event. He then came prepared, knowing their names and having a magic trick especially for my father. He was great with the audience - ensuring everyone was included and balancing across the full range of ages and interests. The entire 90 minutes was engaging and delightful, from being amazed by magic to learning about Martin's varying exploits, to the hands-on element where we learned to perform magic ourselves. Well structured and just the right amount of all to hold our interest, make us laugh and smile. I fully recommend this to anyone - just an individual joining a regular event without knowing any of the other participants, through to organizing as a private event for kids through adults.
+					</div>
+					<div class="martin-response">
+						<div class="martin-response-pic">
+							<img class="footer-pic" src="https://a0.muscache.com/im/pictures/user/fb15a727-24d6-4d43-a4a2-ef8ae71e0cee.jpg?aki_policy=profile_x_medium" height="48" width="48" alt="Martin" title="Martin">
+						</div>
+						<div class="martin-response-title">
+							Martin's response
+						</div>
+						<div class="martin-response-date">
+							June 2020
+						</div>
+						<div class="martin-response-comment">
+							Thanks for the lovely in depth review Anita! It was great spending time with you all and glad the magic went down well! Stay safe :)
+						</div>
+					</div>
+				</div>
+					
+				<div class="guest-review-4 guest-review border-bottom">
+					<div class="guest-review-pic">
+						<img src="https://a0.muscache.com/im/pictures/user/e9e08ac4-7ce1-48c1-8268-c7dde75df4da.jpg?aki_policy=profile_x_medium" height="48" width="48" alt="Jaime" title="Jaime">
+					</div>
+					<div class="guest-review-name">
+						Jaime
+					</div>
+					<div class="guest-review-date">
+						June 2020
+					</div>
+					<div class="guest-review-rating">
+						<span>&#9733 &#9733 &#9733 &#9733 &#9733</span>
+					</div>
+					<div class="guest-review-comment">
+						Martin was INCREDIBLE! 6 Magic Guinness World Records for a reason. His talents are insane! My kids minds were blown away with all of his tricks, and teaching us some secrets at the end of the experience was an awesome bonus. He's such a wonderful magician and an even better storyteller. I highly recommend this online experience.
+					</div>
+					<div class="martin-response">
+						<div class="martin-response-pic">
+							<img class="footer-pic" src="https://a0.muscache.com/im/pictures/user/fb15a727-24d6-4d43-a4a2-ef8ae71e0cee.jpg?aki_policy=profile_x_medium" height="48" width="48" alt="Martin" title="Martin">
+						</div>
+						<div class="martin-response-title">
+							Martin's response
+						</div>
+						<div class="martin-response-date">
+							June 2020
+						</div>
+						<div class="martin-response-comment">
+							It was an honour to spend time with your lovely family Jaime and thanks for the review! Keep up the great work you do and hope the kids are practicing their new skills!
+						</div>
+					</div>
+				</div>
+				<div class="guest-review-5 guest-review">
+					<div class="guest-review-pic">
+						<img src="https://a0.muscache.com/im/pictures/user/19845dd6-b634-4c44-b3cb-c322083cce85.jpg?aki_policy=profile_x_medium" height="48" width="48" alt="Sholto" title="Sholto">
+					</div>
+					<div class="guest-review-name">
+						Sholto
+					</div>
+					<div class="guest-review-date">
+						June 2020
+					</div>
+					<div class="guest-review-rating">
+						<span>&#9733 &#9733 &#9733 &#9733 &#9733</span>
+					</div>
+					<div class="guest-review-comment">
+						Martin's magical experience was amazing! The background and story to how he became a magician made the experience personal. I really enjoyed the magic and it was so much fun to learn one or two tricks! Amazing
+					</div>
+					<div class="martin-response">
+						<div class="martin-response-pic">
+							<img class="footer-pic" src="https://a0.muscache.com/im/pictures/user/fb15a727-24d6-4d43-a4a2-ef8ae71e0cee.jpg?aki_policy=profile_x_medium" height="48" width="48" alt="Martin" title="Martin">
+						</div>
+						<div class="martin-response-title">
+							Martin's response
+						</div>
+						<div class="martin-response-date">
+							July 2020
+						</div>
+						<div class="martin-response-comment">
+							Thanks for the review Sholto and was great to bring you and your fiancée together from opposite ends of the world! Hope you enjoyed performing the magic to your friends!
+						</div>
+					</div>
+				</div>
+				<div class="more-reviews">
+					<ul class="more-reviews-list list-inline">
+						<li class="list-inline-item">1</li>
+						<li class="list-inline-item">2</li>
+						<li class="list-inline-item">3</li>
+						<li class="list-inline-item">...</li>
+						<li class="list-inline-item">89</li>
+						<li class="list-inline-item"><button><i class="fas fa-chevron-right"></i></button></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- ///////////////////////////////// -->
+
+	<div class="availability container-fluid">
+		<div class="availability-row row">
+			<div class="availability-title col-12 h4">
+				Availability
+			</div>
+			<div class="calendars col-12 row">
+				<div class="month1 col-3">July</div>
+				<div class="month2 col-3">August</div>
+				<div class="month3 col-3">September</div>
+				<div class="month4 col-3">October</div>
+				<div class="other-months">
+					<button class="next-months"><i class="fas fa-chevron-right"></i></button>
+				</div>
+			</div>
+		</div>
+		<div class="availability-select-date-button">
+			<button>Select a date</button>
+		</div>
+	</div>
+
+	<!-- ////////////////////////////// -->
+
+	<div class="things-to-keep-in-mind container">
+		<div class="things-to-keep-row row">
+			<div class="things-to-keep-in-mind-title col-4 h4">Things to keep in mind</div>
+			<div class="things-to-keep-in-mind-details col-8">
+				<div class="cancellation-policy">
+					<div class="cancellation-policy-title h5">Cancellation policy</div>
+					<div class="cancellation-policy-description">Any experience can be canceled and fully refunded within 24 hours of purchase, or at least 7 days before the experience starts.</div>
+					<div class="cancellation-policy-learn-more"><button class="btn btn-info">Learn more</button></div>
+				</div>
+				<div class="communication-policy">
+					<div class="communication-policy-title h5">Communication policy</div>
+					<div class="communication-policy-description">Always communicate through Airbnb. To protect your payment, never transfer money or communicate outside of the Airbnb website or app.</div>
+					<div class="communication-policy-learn-more"><button class="btn btn-info">Learn more</button></div>
+				</div>
+				<div class="guest-requirements">
+					<div class="guest-requirements-title h5">Guest requirements</div>
+					<div class="guest-requirements-description">You’ll need an internet connection and the ability to stream audio and video to participate. A link and details on how to join will be included in your booking confirmation email.
+					Up to 10 guests ages 7 and up can attend.</div>
+					<div class="guest-requirements-learn-more"><button class="btn btn-info">Learn more</button></div>
+				</div>
+				<div class="more-tips">
+					<div class="more-tips-title h5">More tips</div>
+					<div class="more-tips-description">If there isn't enough space available on a public session to book all of your guests, send me a message and I will book them in accordingly.
+					Initial private group fee covers up to 10 guests on a session. For groups over 10 add the additional guests onto your booking before making the final payment.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- //////////////////////////////////////////// -->
+
+	<div class="more-online-experiences container-fluid">
+		<div class="more-online-experiences-row row">
+			<div class="more-online-experiences-title col-12 h4">More online experiences</div>
+			<div class="card-deck">
+				<div class="card">
+			    	<img class="card-img-top" src="https://a0.muscache.com/im/pictures/1fb90300-b20a-4a33-9ae5-85008a2e2eba.jpg?aki_policy=poster">
+		    		<div class="card-body">
+		      		<h5 class="card-title">PRAGUE</h5>
+		    		<p class="card-text">Follow a Plague Doctor Through Prague</p>
+		    		<p class="card-text">From $18/person</p>
+		    		<p class="card-text">
+		    			<span>&#9733</span>
+					    <span class="more-experiences-rating">4.92</span>
+					    <span class="more-experiences-votes">(955)</span>
+					</p>
+		    		</div>
+		  		</div>
+				<div class="card">
+			    	<img class="card-img-top" src="https://a0.muscache.com/im/pictures/9ce74372-c1cc-4cdb-8e90-2ae9bd78a8a8.jpg?aki_policy=poster">
+		    		<div class="card-body">
+		      		<h5 class="card-title">LISBON</h5>
+		    		<p class="card-text">cLock Down the Interactive Live Musical</p>
+		    		<p class="card-text">From $27/person</p>
+		    		<p class="card-text">
+		    			<span>&#9733</span>
+					    <span class="more-experiences-rating">5.0</span>
+					    <span class="more-experiences-votes">(68)</span>
+					</p>
+		    		</div>
+		  		</div>
+				<div class="card">
+			    	<img class="card-img-top" src="https://a0.muscache.com/im/pictures/lombard/MtTemplate-1652939-media_library/original/a7f906fc-f4c8-4b27-a5e2-b783115350e4.jpeg?aki_policy=poster">
+		    		<div class="card-body">
+		      		<h5 class="card-title">LISBOA</h5>
+		    		<p class="card-text">Sangria and Secrets with Drag Queens</p>
+		    		<p class="card-text">From $35/person</p>
+		    		<p class="card-text">
+		    			<span>&#9733</span>
+					    <span class="more-experiences-rating">4.96</span>
+					    <span class="more-experiences-votes">(2146)</span>
+					</p>
+		    		</div>
+		  		</div>
+				<div class="card">
+			    	<img class="card-img-top" src="https://a0.muscache.com/im/pictures/4016b41d-aceb-461f-a48d-d13dd76abf97.jpg?aki_policy=poster">
+		    		<div class="card-body">
+		      		<h5 class="card-title">大阪市</h5>
+		    		<p class="card-text">Meditation with a Japanese Buddhist Monk</p>
+		    		<p class="card-text">From $10/person</p>
+		    		<p class="card-text">
+		    			<span>&#9733</span>
+					    <span class="more-experiences-rating">4.92</span>
+					    <span class="more-experiences-votes">(827)</span>
+					</p>
+		    		</div>
+		  		</div>
+				<div class="card">
+			    	<img class="card-img-top" src="https://a0.muscache.com/im/pictures/87d47904-1599-4874-b8fc-0289a27f698d.jpg?aki_policy=poster">
+		    		<div class="card-body">
+		      		<h5 class="card-title">BATH</h5>
+		    		<p class="card-text">GINspiration History & Cocktails at Home</p>
+		    		<p class="card-text">From $20/person</p>
+		    		<p class="card-text">
+		    			<span>&#9733</span>
+					    <span class="more-experiences-rating">4.96</span>
+					    <span class="more-experiences-votes">(464)</span>
+					</p>
+		    		</div>
+		  		</div>
+
+			</div>
+		</div>
+		<div class="more-online-experiences-show-all row h5">
+			<a href="#">Show all online experiences</a>
+		</div>
+	</div>
+
+
+	<!-- ///////////////////////////////////// -->
+
+	<div class="bottom-area container">
+		<div class="bottom-area-cards card-group">
+			<div class="card w-25">
+				<h5 class="card-title">ABOUT</h5>
+			  <ul class="list-group list-group-flush">
+			    <li class="list-group-item">How Airbnb works</li>
+			    <li class="list-group-item">Diversity and Belonging</li>
+			    <li class="list-group-item">Against Discrimination</li>
+				<li class="list-group-item">Accessibility</li>
+			    <li class="list-group-item">Trust & Safety</li>
+			    <li class="list-group-item">Airbnb Citizen</li>
+			    <li class="list-group-item">Olympics</li>
+			    <li class="list-group-item">Newsroom</li>
+			  </ul>
+			</div>
+
+			<div class="card w-25">
+				<h5 class="card-title">COMMUNITY</h5>
+			  <ul class="list-group list-group-flush">
+			    <li class="list-group-item">Airbnb Magazine</li>
+			    <li class="list-group-item">Airbnb Associates</li>
+			    <li class="list-group-item">Airbnb for Work</li>
+				<li class="list-group-item">Invite friends</li>
+			    <li class="list-group-item">Gift cards</li>
+			    <li class="list-group-item">Careers</li>
+			  </ul>
+			</div>
+
+			<div class="card w-25">
+				<h5 class="card-title">HOST</h5>
+			  <ul class="list-group list-group-flush">
+			    <li class="list-group-item">Host your home</li>
+			    <li class="list-group-item">Host an online experience</li>
+			    <li class="list-group-item">Message from CEO Brian Chesky</li>
+				<li class="list-group-item">Responsible hosting</li>
+			    <li class="list-group-item">Open Homes</li>
+			    <li class="list-group-item">Resource Center</li>
+			    <li class="list-group-item">Community Center</li>
+			  </ul>
+			</div>
+
+			<div class="card w-25">
+				<h5 class="card-title">SUPPORT</h5>
+			  <ul class="list-group list-group-flush">
+			    <li class="list-group-item">Updates for COVID-19</li>
+			    <li class="list-group-item">Help Center</li>
+			    <li class="list-group-item">Cancellation options</li>
+				<li class="list-group-item">Neighborhood Support</li>
+			  </ul>
+			</div>
+
+
+
+
+
+		</div>
+
+
+
+
+
+	</div>
+
+<!-- /////////////////////////////////////////// -->
+
+	<div class="final-section container">
+		<div class="final-line-row row">
+			<span class="airbnb-inc col-4">
+				&#169 2020 Airbnb, Inc. All rights reserved
+			</span>
+			<ul class="list-inline col-3">
+				<li class="list-inline-item">Privacy</li>
+				<li class="list-inline-item">Terms</li>
+				<li class="list-inline-item">Sitemap</li>
+			</ul>
+
+			<ul class="list-inline col-3">
+				<li class="list-inline-item"><i class="fas fa-globe"></i> English (US)</li>
+				<li class="list-inline-item"><i class="fas fa-dollar-sign"></i> USD </li>
+			</ul>
+
+			<ul class="list-inline col-2">
+				<li class="list-inline-item"><i class="fab fa-facebook-square"></i></li>
+				<li class="list-inline-item"><i class="fab fa-twitter-square"></i></li>
+				<li class="list-inline-item"><i class="fab fa-instagram-square"></i></li>
+			</ul>
+		</div>
+
+
+
+	</div>
+
+
+
+
+</div>
+
+
+
+<footer class="container fixed-bottom" style="background-color: white">
+	<div class="title-in-footer">
+		<span class="profile-pic"><img class="footer-pic" style="border-radius: 50%" src="https://a0.muscache.com/im/pictures/user/fb15a727-24d6-4d43-a4a2-ef8ae71e0cee.jpg?aki_policy=profile_x_medium" height="48" width="48" alt="Martin" title="Martin"></span>
+		<span class="title-in-footer">Secrets of Magic</span>
+		<span>4.97</span>
+		<span><i class="fas fa-star"></i></span>
+		<span>(440)</span>
+	</div>
+	<div class="price-dates-in-footer">
+		<span class="price-in-footer">From $25/person</span>
+		<span class="dates-in-footer">
+			<button class="see-dates">See dates</button>
+		</span>
+	</div>
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
